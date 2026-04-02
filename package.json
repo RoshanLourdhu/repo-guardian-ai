@@ -1,8 +1,9 @@
 {
-  "type": "module",
-  "dependencies": {
-    "acorn": "^8.16.0",
-    "dotenv": "^17.3.1",
-    "gitclaw": "^1.1.8"
+  "name": "repo-guardian-ai",
+  "version": "1.0.0",
+  "main": "run.cjs",
+  "scripts": {
+    "start": "node runner.cjs",
+    "analyze": "node run.cjs"
   }
 }

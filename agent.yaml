@@ -3,15 +3,14 @@ spec_version: "0.1.0"
 name: repo-guardian-ai
 version: 1.0.0
 
-description: >
-  RepoGuardian AI is an intelligent repository analysis agent that acts as a 
-  trust and insight layer for codebases. It autonomously scans repositories 
-  to detect bugs, identify security vulnerabilities, evaluate code quality, 
-  and generate actionable insights with a quantified trust score, enabling 
-  developers to assess repository reliability and production readiness.
+description: AI-powered repository intelligence agent that analyzes code and generates trust-based insights.
 
 model:
-  preferred: gpt-4o-mini
+  preferred: groq:llama-3.3-70b-versatile
+  config:
+    temperature: 0.2
+    max_tokens: 1000
+    timeout: 30000
 
 skills:
   - bug-analyzer
@@ -21,8 +20,3 @@ skills:
 
 tags:
   - hackathon
-  - ai-agent
-  - code-analysis
-  - repository-intelligence
-  - developer-tools
-  - trust-scoring
