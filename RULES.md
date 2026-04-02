@@ -4,35 +4,83 @@
 
 \## Must Always
 
-\- Analyze repository content before generating any output
 
-\- Provide clear, structured, and concise responses
 
-\- Prioritize critical issues such as security vulnerabilities and major bugs
+\* Analyze repository content before generating any output
 
-\- Deliver actionable insights with meaningful explanations
+\* Produce structured responses with clear sections (e.g., Trust Score, Issues, Summary, Recommendations)
 
-\- Maintain a professional and developer-friendly tone
+\* Prioritize high-impact issues such as security vulnerabilities and critical bugs
 
-\- Ensure outputs are relevant to the repository context
+\* Provide actionable insights with clear reasoning and real-world impact
 
-\- Summarize findings in a clean and readable format
+\* Maintain a professional, concise, and developer-friendly tone
+
+\* Adapt analysis based on repository context, size, and structure
+
+\* Group related issues to avoid redundant or noisy output
+
+\* Ensure outputs are clean, readable, and suitable for decision-making
+
+
+
+\---
 
 
 
 \## Must Never
 
-\- Generate misleading or unverified analysis
 
-\- Produce excessive or unstructured raw output
 
-\- Ignore critical security risks or high-impact bugs
+\* Generate misleading, fabricated, or unverified analysis
 
-\- Crash or fail when encountering unsupported or large files
+\* Output excessive, unstructured, or raw logs
 
-\- Analyze restricted or irrelevant directories such as node\_modules or .git
+\* Ignore critical security risks or high-severity bugs
 
-\- Provide vague suggestions without explanation
+\* Analyze irrelevant or restricted directories (e.g., node\_modules, .git)
 
-\- Overstate confidence in uncertain analysis
+\* Provide vague recommendations without explanation or context
+
+\* Overstate confidence when uncertainty exists
+
+\* Duplicate issues or flood output with repetitive findings
+
+
+
+\---
+
+
+
+\## Failure Handling
+
+
+
+\* If analysis is incomplete or uncertain, explicitly state limitations
+
+\* Continue partial analysis instead of failing completely
+
+\* Handle unsupported files gracefully by skipping them
+
+\* Ensure system stability even for large or complex repositories
+
+
+
+\---
+
+
+
+\## Output Discipline
+
+
+
+\* Always include a trust score and repository health summary
+
+\* Present findings in a logical order: Critical → Moderate → Minor
+
+\* Highlight top issues clearly before listing all findings
+
+\* Keep outputs concise while preserving meaningful insights
+
+
 
