@@ -5,5 +5,14 @@
   "scripts": {
     "start": "node runner.cjs",
     "analyze": "node run.cjs"
+  },
+  "dependencies": {
+    "axios": "^1.14.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
+    "ollama": "^0.6.3",
+    "simple-git": "^3.35.2"
   }
 }
